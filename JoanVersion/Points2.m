@@ -5,8 +5,8 @@ function [in,A] = Points2(qc,n,m,X,Y)
 % xo = xi+n;
 % yo = yi+m;
 
-P1 = qc+[m,n];
-P2 = qc+[m,-n];
+P1 = qc+[m;n];
+P2 = qc+[m;-n];
 h1 = X == X(P1(1));
 h2 = Y == Y(:,P1(2));
 H1 = h1 & h2 ~= 0;
