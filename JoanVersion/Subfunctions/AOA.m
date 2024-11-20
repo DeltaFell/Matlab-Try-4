@@ -26,7 +26,7 @@ relativeV_angle = cart2pol(-relative_velocity(1,:),-relative_velocity(2,:));
 %     end
 % end
 
-aoa = relativeV_angle - bladeV_angle;
+aoa = relativeV_angle;% - bladeV_angle;
 %aoa = pi - bladeV_angle + relativeV_angle;
 
 aoa = aoa/pi*180+alphaP;
